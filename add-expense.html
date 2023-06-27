@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Budgetter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header-color">
+      <div class="container px-md-5">
+      <div class="d-flex flex-column-reverse flex-md-row justify-content-between">
+        <div class="col col-md-6 col-lg-7 py-0 me-3">
+          <h1 class="header-title text-uppercase mt-2 mb-0">Budgetter</h1>
+          <p class="header-text fs-6 mb-0">Świadomość pozwala na utrzymanie dobrych relacji z finansami.</p>
+        </div>
+
+        <div class="col col-md-6 col-lg-5">
+          <img class="img-fluid" src="./pictures/wykresy2.jpg" alt="Wykresy" />
+      </div>
+      </div>
+    </div>
+    </header>
+<nav class="navbar-color">
+<div class="container px-md-5">
+    <nav class="navbar navbar-expand-md py-0" aria-label="Navbar">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand d-flex flex-column justify-content-center" href="./home-page.html"><img class="img-fluid" src="./svg/house.svg"/></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="navbar-collapse collapse" id="navbarsExample03">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item text-left">
+              <a class="nav-link active" aria-current="page" href="#">Dodaj przychód</a>
+            </li>
+            <li class="nav-item text-left">
+              <a class="nav-link active" aria-current="page" href="./add-expense.html">Dodaj wydatek</a>
+            </li>
+            <li class="nav-item text-left">
+              <a class="nav-link active" aria-current="page" href="./view-balance-sheet.html">Przeglądaj bilans</a>
+            </li>
+            <li class="nav-item text-left">
+              <a class="nav-link active" aria-current="page" href="#">Ustawienia</a>
+            </li>
+            <li class="nav-item text-left">
+              <a class="nav-link active" aria-current="page" href="./main-site.html">Wyloguj</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </nav>
+
+  <div class="container px-md-5">
+    <div class="d-flex flex-column flex-md-row justify-content-center">
+      <div class="col col-md-6 col-lg-4 p-2">
+        <h4 class="text-center">Dodawanie wydatku</h4>
+        <div class="input-group mb-3">
+          <span class="input-group-text header-color" id="basic-addon1"><img src="./svg/pen.svg"/></span>
+          <input type="text" class="form-control" placeholder="Kwota" aria-label="Amount" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text header-color" id="basic-addon1"><img src="./svg/pen.svg"/></span>
+          <input type="text" class="form-control" placeholder="Data" aria-label="Date" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text header-color" id="basic-addon1"><img src="./svg/card-list.svg"/></span>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected="">Sposób płatności</option>
+            <option value="1">Gotówka</option>
+            <option value="2">Karta debetowa</option>
+            <option value="3">Karta kredytowa</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text header-color" id="basic-addon1"><img src="./svg/card-list.svg"/></span>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected="">Kategoria</option>
+            <option value="1">Jedzenie</option>
+            <option value="2">Mieszkanie</option>
+            <option value="3">Transport</option>
+            <option value="4">Telekomunikacja</option>
+            <option value="5">Opieka zdrowotna</option>
+            <option value="6">Ubranie</option>
+            <option value="7">Higiena</option>
+            <option value="8">Dzieci</option>
+            <option value="9">Rozrywka</option>
+            <option value="10">Wycieczka</option>
+            <option value="11">Szkolenia</option>
+            <option value="12">Książki</option>
+            <option value="13">Oszczędności</option>
+            <option value="14">Na złotą jesień, czyli emeryturę</option>
+            <option value="15">Spłata długów</option>
+            <option value="16">Darowizna</option>
+            <option value="17">Inne wydatki</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text header-color" id="basic-addon1"><img src="./svg/pen.svg"/></span>
+          <input type="text" class="form-control" placeholder="Komentarz" aria-label="Comment" aria-describedby="basic-addon1">
+        </div>
+        <button type="button" class="w-100 btn btn-secondary">Dodaj</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
